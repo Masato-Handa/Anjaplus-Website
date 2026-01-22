@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjayoga Studio Schedule</title>
+  <link rel="stylesheet" href="../assets/css/schedule.css">
+  </head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Anjaplus</div>
+      <div class="nav-links">
+        <a href="index.html#profile">About</a>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            aria-expanded="false"
+            aria-controls="classes-menu"
+            id="classesToggle">
+            Classes 
+            <span class="caret">▾</span>
+          </button>
+        <div class="dropdown-menu" id="classes-menu">
+        <a href="classes.html#yoga">Yoga</a>
+        <a href="classes.html#pilates">Pilates</a>
+        <a href="classes.html#training">Instructor Training</a>
+      </div>
+    </div>
+        <a href="#schedule">Schedule</a>
+        <a href="#location">Location</a>
+        <div class="lang-toggle-nav">
+          <div class="lang-toggle-btn en-active">
+            <a href="../id/index.html" class="lang-option">ID</a>
+            <a href="index.html" class="lang-option active">EN</a>
+          </div>
+        </div>
+        <a href="https://wa.me/6281373319019" class="btn btn-primary" target="_blank">Booking</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="container">
+      <h1>ANJAPLUS</h1>
+      <p class="subtitle">Weekly Class Schedule</p>
+    </div>
+  </div>
+
+  <div class="schedule-wrapper">
+    <div class="studio-selector">
+      <button class="studio-btn active" onclick="showSchedule('studio1', this)">Studio 1 - Yoga</button>
+      <button class="studio-btn" onclick="showSchedule('studio2-yoga', this)">Studio 2 - Yoga</button>
+       <button class="studio-btn" onclick="showSchedule('studio1-pilates', this)">Studio 1 - Pilates</button>
+      <button class="studio-btn" onclick="showSchedule('studio2-pilates', this)">Studio 2 - Pilates</button>
+    </div>
+
+    <div id="studio1" class="schedule-section active">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Puri Casablanca Blok B.2</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SUNDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Ernita</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">9:30 AM</div>
+              <div class="class-name">Prenatal Yoga</div>
+              <div class="class-teacher">Teacher: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">4:00 PM</div>
+              <div class="class-name">Swing Therapy</div>
+              <div class="class-teacher">Teacher: Yanni</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MONDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Edward</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Prenatal Yoga</div>
+              <div class="class-teacher">Teacher: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Pilates Mat</div>
+              <div class="class-teacher">Teacher: Devy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">TUESDAY</div>
+            <div class="class-count">2 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">5:30 PM</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Teacher: Rina</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Rina</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">WEDNESDAY</div>
+            <div class="class-count">2 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Wheel Yoga</div>
+              <div class="class-teacher">Teacher: Riyanti</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:00 PM</div>
+              <div class="class-name">Therapy/Backpain</div>
+              <div class="class-teacher">Teacher: Retno</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">THURSDAY</div>
+            <div class="class-count">2 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">5:30 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Rina</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Teacher: Melva</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">FRIDAY</div>
+            <div class="class-count">4 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Riyanti</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Prenatal Yoga</div>
+              <div class="class-teacher">Teacher: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:00 PM</div>
+              <div class="class-name">Therapy/Backpain</div>
+              <div class="class-teacher">Teacher: Retno</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Maya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SATURDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Teacher: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">2:30 PM</div>
+              <div class="class-name">Therapy/Backpain</div>
+              <div class="class-teacher">Teacher: Maya</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">4:00 PM</div>
+              <div class="class-name">Power Hatha VY</div>
+              <div class="class-teacher">Teacher: Nicke</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="studio2-yoga" class="schedule-section">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Ruko Golden Land Blok L 12a - 12b</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SUNDAY</div>
+            <div class="class-count">0 Classes</div>
+          </div>
+          <div class="empty-day">No classes scheduled</div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MONDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">4:30 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Yanni</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:30 PM</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Teacher: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Melva</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">TUESDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:30 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Pilates Mat</div>
+              <div class="class-teacher">Teacher: Edward</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">WEDNESDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">4:30 PM</div>
+              <div class="class-name">Wheel Yoga</div>
+              <div class="class-teacher">Teacher: Yanni</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:30 PM</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Teacher: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Maya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">THURSDAY</div>
+            <div class="class-count">2 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Power Hatha VY</div>
+              <div class="class-teacher">Teacher: Nicke</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">7:00 PM</div>
+              <div class="class-name">Pilates Mat</div>
+              <div class="class-teacher">Teacher: Edward</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">FRIDAY</div>
+            <div class="class-count">1 Class</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">5:30 PM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Farisa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SATURDAY</div>
+            <div class="class-count">1 Class</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Teacher: Ernita</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="studio2-pilates" class="schedule-section">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Ruko Golden Land Blok L 12a - 12b • Starting September 2025</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SUNDAY</div>
+            <div class="class-count">4 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">9:15 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">10:30 AM</div>
+              <div class="class-name">Postural Class</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">4:00 PM</div>
+              <div class="class-name">Postural Class</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MONDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:30 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">TUESDAY</div>
+            <div class="class-count">4 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">9:15 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:30 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">WEDNESDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:30 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">THURSDAY</div>
+            <div class="class-count">4 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">9:15 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:30 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">FRIDAY</div>
+            <div class="class-count">3 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">5:00 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">6:30 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SATURDAY</div>
+            <div class="class-count">4 Classes</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">8:00 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">9:15 AM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">10:00 AM</div>
+              <div class="class-name">Postural Class</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">3:00 PM</div>
+              <div class="class-name">Pilates Group Class</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+    <footer>
+      <div class="footer-content container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">AnjaPro</div>
+          <div class="footer-tagline">Yoga & Pilates Studio in Batam</div>
+          <p class="footer-description">
+            A welcoming space for mindful movement, strength, and balance through yoga and pilates for all levels.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="classes.html">Classes & Pricing</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="#training">Instructor Training</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <ul>
+            <li>Batam, Indonesia</li>
+            <li>
+              <a href="https://wa.me/6281373319019" target="_blank">
+                WhatsApp: +62 813-7331-9019
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@anjaplus.com">
+                info@anjaplus.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h5>Follow Us</h5>
+          <ul>
+            <li>
+              <a href="https://instagram.com/anjaproyoga" target="_blank">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://maps.google.com" target="_blank">
+                Google Maps
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-content">
+          <span>© 2026 AnjaPro Yoga & Pilates. All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="../assets/js/main.js"></script>
+</body> 
+</html>
