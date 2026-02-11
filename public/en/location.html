@@ -1,12 +1,237 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Our Locations | AnjaPro Yoga & Pilates</title>
+  <meta name="description" content="Find AnjaPro Yoga & Pilates studios in Batam. Two locations offering professional yoga and pilates classes." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AnjaPro Locations" />
+  <meta property="og:description" content="Two AnjaPro Yoga & Pilates studios in Batam" />
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="stylesheet" href="../assets/css/location.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Anjaplus</div>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            aria-expanded="false"
+            aria-controls="classes-menu"
+            id="classesToggle">
+            Classes 
+            <span class="caret">▾</span>
+          </button>
+        <div class="dropdown-menu" id="classes-menu">
+        <a href="classes.html#yoga">Yoga</a>
+        <a href="classes.html#pilates">Pilates</a>
+        <a href="classes.html#training">Instructor Training</a>
+      </div>
+    </div>
+        <a href="schedule.html">Schedule</a>
+        <a href="location.html">Location</a>
+        <div class="lang-toggle-nav">
+          <div class="lang-toggle-btn en-active">
+            <a href="../id/index.html" class="lang-option">ID</a>
+            <a href="index.html" class="lang-option active">EN</a>
+          </div>
+        </div>
+        <a href="https://wa.me/6281373319019" class="btn btn-primary" target="_blank">Booking</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Locations Section -->
+  <section class="locations">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Locations</div>
+        <h1 class="section-title">Two Studios in Batam</h1>
+        <p class="section-description">
+          Find the nearest AnjaPro studio and begin your journey toward strength, balance, and mindful movement.
+        </p>
+      </div>
+
+      <div class="service-toggle-nav">
+        <div class="service-toggle-btn pilates-active" id="serviceToggle">
+          <span class="service-option active" data-service="pilates">Pilates</span>
+          <span class="service-option" data-service="yoga">Yoga</span>
+        </div>
+      </div>
+
+      <div class="locations-grid">
+
+        <!-- Location 01 -->
+        <div class="location-card">
+          <div class="location-header">
+            <div class="location-number">01</div>
+            <h2 class="location-title">
+              <span class="btn-icon">📍</span>
+              Simpang Jam Studio
+            </h2>
+            <div class="location-subtitle">Primary Location</div>
+          </div>
+
+          <div class="location-body">
+            <div class="location-address">
+              <div class="location-address-label">Full Address</div>
+              <div class="location-address-text">
+                <strong>Perum. Puri Casablanca Blok B.02</strong>
+                Simpang Jam, in front of Awal Bross Hospital<br>
+                Batam, Riau Islands
+              </div>
+            </div>
+
+            <div class="location-map">
+            <!-- Pilates map -->
+              <iframe
+                data-service-map="pilates"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.2820185188057!2d104.01645223645038!3d1.1212653921051128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98bbb57bb7981%3A0xfaf58767461b40fc!2sAnjaPro%20Pilates%20Studio!5e0!3m2!1sen!2sid!4v1768051907560!5m2!1sen!2sid"
+                loading="lazy"
+                allowfullscreen
+                style= "display:none; border:0;">
+              </iframe>
+
+            <!-- Yoga map -->
+              <iframe
+                data-service-map="yoga"
+                src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.31589939082707!2d104.01638210086051!3d1.1212302550636388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98df39321828d%3A0x56c6895800e729e1!2sAnjayoga%20studio%201!5e0!3m2!1sen!2sau!4v1770728936217!5m2!1sen!2sau" 
+                loading="lazy"
+                allowfullscreen
+                style="display:none; border:0;">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location 02 -->
+        <div class="location-card">
+          <div class="location-header">
+            <div class="location-number">02</div>
+            <h2 class="location-title">
+              <span class="btn-icon">📍</span>
+              Batam Center Studio
+            </h2>
+            <div class="location-subtitle">Secondary Location</div>
+          </div>
+
+          <div class="location-body">
+            <div class="location-address">
+              <div class="location-address-label">Full Address</div>
+              <div class="location-address-text">
+                <strong>Ruko Golden Land Blok L12a–12b</strong>
+                Simpang Kara, Batam Center<br>
+                Batam, Riau Islands
+              </div>
+            </div>
+
+            <div class="location-map">
+              <!--Pilates-->
+              <iframe
+                data-service-map= "pilates"
+                src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d342.5497614455314!2d104.04085253697608!3d1.1106920544410792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d9899751e67255%3A0x1013c015a63381cb!2sAnjapro%20pilates%20studio%202!5e0!3m2!1sen!2sau!4v1770722278204!5m2!1sen!2sau"
+                loading="lazy"
+                allowfullscreen
+                style= "display:none; border:0;">
+              </iframe>
+              
+              <!--Yoga-->
+              <iframe
+                      data-service-map= "yoga"
+                src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d279.84866512759885!2d104.04108542834402!3d1.1108099462899772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d9893aa7af4ed3%3A0xfd0e76b1e4f7ff1b!2sAnjayoga%20Studio%202!5e0!3m2!1sen!2sau!4v1770722364736!5m2!1sen!2sau"
+                loading="lazy"
+                allowfullscreen
+                style= "display:none; border:0;">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer>
+      <div class="footer-content container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">AnjaPro</div>
+          <div class="footer-tagline">Yoga & Pilates Studio in Batam</div>
+          <p class="footer-description">
+            A welcoming space for mindful movement, strength, and balance through yoga and pilates for all levels.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="classes.html">Classes & Pricing</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="#training">Instructor Training</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <ul>
+            <li>Batam, Indonesia</li>
+            <li>
+              <a href="https://wa.me/6281373319019" target="_blank">
+                WhatsApp: +62 813-7331-9019
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@anjaplus.com">
+                info@anjaplus.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h5>Follow Us</h5>
+          <ul>
+            <li>
+              <a href="https://instagram.com/anjaproyoga" target="_blank">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://maps.google.com" target="_blank">
+                Google Maps
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-content">
+          <span>© 2026 AnjaPro Yoga & Pilates. All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
 </html>
+
