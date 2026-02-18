@@ -396,8 +396,44 @@ section {
 .card-subtitle {
   color: var(--mauve);
   font-size: 0.9rem;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-weight: 500;
+}
+
+.class-description {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cream);
+}
+
+.class-description p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.class-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.class-highlights li {
+  color: #666;
+  font-size: 0.85rem;
+  padding: 6px 0 6px 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.class-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .card-body {
@@ -516,6 +552,54 @@ section {
   background: white;
 }
 
+.equipment-description {
+  padding: 24px 32px;
+  background: rgba(235, 222, 212, 0.3);
+  border-bottom: 1px solid var(--cream);
+}
+
+.equipment-description p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.what-to-expect {
+  margin-top: 16px;
+}
+
+.what-to-expect strong {
+  color: var(--burgundy);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.what-to-expect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.what-to-expect li {
+  color: #666;
+  font-size: 0.85rem;
+  padding: 6px 0 6px 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.what-to-expect li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--mauve);
+  font-weight: 700;
+}
+
 .pricing-tier {
   margin-bottom: 32px;
 }
@@ -581,19 +665,21 @@ section {
   font-size: 0.9rem;
 }
 
-/* Reformer Group Class - Simplified with Cream */
+/* Reformer Group Class - Fixed Grid Layout */
 .reformer-card {
   background: linear-gradient(to bottom, var(--cream), white);
   border: 2px solid var(--gold);
   border-radius: 12px;
   padding: 48px;
   text-align: center;
+  position: relative;
 }
 
 .reformer-card .featured-badge {
-  position: static;
-  display: inline-block;
-  margin-bottom: 16px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .reformer-card h3 {
@@ -604,14 +690,30 @@ section {
 
 .reformer-card .equipment-list {
   color: var(--mauve);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.reformer-card .equipment-description {
+  text-align: left;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
   margin-bottom: 32px;
+}
+
+.reformer-card .equipment-description p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 .reformer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
-  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -842,9 +944,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .tier-grid,
-  .reformer-grid {
+  .tier-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .reformer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .pilates-header-card,
@@ -855,6 +961,18 @@ footer {
 
   .pricing-table-header {
     padding: 20px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reformer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tier-option {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 }
 
@@ -938,4 +1056,3 @@ footer {
     box-shadow: 0 5px 20px rgba(114, 67, 69, 0.2);
   }
 }
-

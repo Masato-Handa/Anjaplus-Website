@@ -314,9 +314,14 @@ body {
   border-radius: 50%;
 }
 
-.locations .section-label,
+.locations .section-label{
+  color: var(--gold);
+  font-weight: 500;
+}
+
 .locations .section-title {
   color: white;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
 }
 
 .locations .section-description {
@@ -597,14 +602,15 @@ body {
 /* Service Toggle Container */
 .service-toggle-nav {
   display: flex;
-  justify-content: center; /* Centers the toggle on the page */
+  justify-content: left; /* Centers the toggle on the page */
   margin: 40px 0;
+  background: transparent;
 }
 
 .service-toggle-btn {
   display: flex;
   align-items: center;
-  background: rgba(114, 67, 69, 0.1); /* Match lang toggle */
+  background: var(--light-gray);/*rgba(114, 67, 69, 0.1);  Match lang toggle */
   border: 2px solid rgba(114, 67, 69, 0.2);
   border-radius: 50px;
   padding: 4px;
