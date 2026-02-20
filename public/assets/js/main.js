@@ -1,6 +1,10 @@
-// Show navbar on scroll
+// ===============================
+// NAVBAR VISIBILITY ON SCROLL
+// ===============================
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+
   if (window.scrollY > 100) {
     navbar.classList.add('visible');
   } else {
@@ -8,36 +12,65 @@ window.addEventListener('scroll', () => {
   }
 });
 
-const toggle = document.getElementById("classesToggle");
-const menu = document.getElementById("classes-menu");
 
-toggle.addEventListener("click", () => {
-  const open = menu.classList.toggle("open");
-  toggle.setAttribute("aria-expanded", open);
-});
+// ===============================
+// CLASSES DROPDOWN (Desktop)
+// ===============================
+const classesToggle = document.getElementById("classesToggle");
+const classesMenu = document.getElementById("classes-menu");
 
-document.addEventListener("click", (e) => {
-  if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-    menu.classList.remove("open");
-    toggle.setAttribute("aria-expanded", "false");
-  }
-});
+if (classesToggle && classesMenu) {
 
-// Schedule schedule-section
-  function showSchedule(scheduleId, button) {
-    document.querySelectorAll('.schedule-section').forEach(section => {
-      section.classList.remove('active');
-    });
+  classesToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = classesMenu.classList.toggle("open");
+    classesToggle.setAttribute("aria-expanded", open);
+  });
 
-    document.querySelectorAll('.studio-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
+  document.addEventListener("click", (e) => {
+    if (!classesToggle.contains(e.target) && !classesMenu.contains(e.target)) {
+      classesMenu.classList.remove("open");
+      classesToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
-    document.getElementById(scheduleId).classList.add('active');
-    button.classList.add('active');
-  }
 
-// Toggle Service (Pilates / Yoga) - Updated for sliding animation
+// ===============================
+// MOBILE HAMBURGER MENU
+// ===============================
+const mobileToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileToggle && navLinks) {
+  mobileToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileToggle.classList.toggle('is-active');
+  });
+}
+
+
+// ===============================
+// SCHEDULE SWITCHING
+// ===============================
+function showSchedule(scheduleId, button) {
+  document.querySelectorAll('.schedule-section').forEach(section => {
+    section.classList.remove('active');
+  });
+
+  document.querySelectorAll('.studio-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  const target = document.getElementById(scheduleId);
+  if (target) target.classList.add('active');
+  if (button) button.classList.add('active');
+}
+
+
+// ===============================
+// SERVICE TOGGLE (Yoga / Pilates)
+// ===============================
 const serviceToggle = document.getElementById('serviceToggle');
 const serviceOptions = document.querySelectorAll(".service-option");
 const cards = document.querySelectorAll(".location-card");
@@ -46,18 +79,15 @@ serviceOptions.forEach(option => {
   option.addEventListener("click", () => {
     const service = option.dataset.service;
 
-    // 1. Update Container Class for the sliding gold pill
     if (serviceToggle) {
       serviceToggle.classList.remove('pilates-active', 'yoga-active');
       serviceToggle.classList.add(`${service}-active`);
     }
 
-    // 2. Update Active Text State
-    serviceOptions.forEach(opt => 
+    serviceOptions.forEach(opt =>
       opt.classList.toggle("active", opt === option)
     );
 
-    // 3. Toggle maps in every card
     cards.forEach(card => {
       const maps = card.querySelectorAll("[data-service-map]");
       maps.forEach(map => {
@@ -68,8 +98,8 @@ serviceOptions.forEach(option => {
   });
 });
 
-// Default state: Trigger the first option if it exists
+// Set default state
 if (serviceOptions.length > 0) {
-    // We use a small timeout to ensure the DOM is fully ready for the display style changes
-    serviceOptions[0].click();
+  serviceOptions[0].click();
 }
+

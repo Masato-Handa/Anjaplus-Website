@@ -780,6 +780,27 @@ footer {
   color: var(--gold);
 }
 
+.footer-social ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--light-gray);
+  display: inline-block;
+}
+
+.footer-social a {
+  color: var(--cream);
+}
+
+.footer-social a:hover {
+  color: var(--gold);
+}
+
 /* =========================
    Footer – Mobile
    ========================= */

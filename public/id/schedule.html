@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Studio Anjayoga</title>
+  <link rel="stylesheet" href="../assets/css/schedule.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Anjaplus</div>
+      <div class="nav-links">
+        <a href="index.html#profile">Tentang Kami</a>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            aria-expanded="false"
+            aria-controls="classes-menu"
+            id="classesToggle">
+            Kelas 
+            <span class="caret">▾</span>
+          </button>
+          <div class="dropdown-menu" id="classes-menu">
+            <a href="classes.html#yoga">Yoga</a>
+            <a href="classes.html#pilates">Pilates</a>
+            <a href="classes.html#training">Pelatihan Instruktur</a>
+          </div>
+        </div>
+        <a href="#schedule">Jadwal</a>
+        <a href="location.html">Lokasi</a>
+        <div class="lang-toggle-nav">
+          <div class="lang-toggle-btn id-active">
+            <a href="schedule.html" class="lang-option active">ID</a>
+            <a href="../en/schedule.html" class="lang-option">EN</a>
+          </div>
+        </div>
+        <a href="https://wa.me/6281373319019" class="btn btn-primary" target="_blank">Booking</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Anjaplus</h1>
+      <p class="subtitle">Jadwal Kelas Mingguan</p>
+    </div>
+  </div>
+
+  <div class="schedule-wrapper">
+    <div class="studio-selector">
+      <button class="studio-btn active" onclick="showSchedule('studio1', this)">Studio 1 - Yoga</button>
+      <button class="studio-btn" onclick="showSchedule('studio2-yoga', this)">Studio 2 - Yoga</button>
+      <button class="studio-btn" onclick="showSchedule('studio1-pilates', this)">Studio 1 - Pilates</button>
+      <button class="studio-btn" onclick="showSchedule('studio2-pilates', this)">Studio 2 - Pilates</button>
+    </div>
+
+    <!-- Studio 1 - Yoga -->
+    <div id="studio1" class="schedule-section active">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Puri Casablanca Blok B.2</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MINGGU</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Ernita</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.30</div>
+              <div class="class-name">Yoga Prenatal</div>
+              <div class="class-teacher">Pengajar: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Swing Therapy</div>
+              <div class="class-teacher">Pengajar: Yanni</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SENIN</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Edward</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Yoga Prenatal</div>
+              <div class="class-teacher">Pengajar: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Pilates Mat</div>
+              <div class="class-teacher">Pengajar: Devy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SELASA</div>
+            <div class="class-count">2 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">17.30</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Pengajar: Rina</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Rina</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">RABU</div>
+            <div class="class-count">2 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Wheel Yoga</div>
+              <div class="class-teacher">Pengajar: Riyanti</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.00</div>
+              <div class="class-name">Terapi / Nyeri Punggung</div>
+              <div class="class-teacher">Pengajar: Retno</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">KAMIS</div>
+            <div class="class-count">2 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">17.30</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Rina</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Pengajar: Melva</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">JUMAT</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Riyanti</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Yoga Prenatal</div>
+              <div class="class-teacher">Pengajar: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.00</div>
+              <div class="class-name">Terapi / Nyeri Punggung</div>
+              <div class="class-teacher">Pengajar: Retno</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Maya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SABTU</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Pengajar: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">14.30</div>
+              <div class="class-name">Terapi / Nyeri Punggung</div>
+              <div class="class-teacher">Pengajar: Maya</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Power Hatha VY</div>
+              <div class="class-teacher">Pengajar: Nicke</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Studio 2 - Yoga -->
+    <div id="studio2-yoga" class="schedule-section">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Ruko Golden Land Blok L 12a - 12b</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MINGGU</div>
+            <div class="class-count">0 Kelas</div>
+          </div>
+          <div class="empty-day">Tidak ada kelas terjadwal</div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SENIN</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">16.30</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Yanni</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.30</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Pengajar: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Melva</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SELASA</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.30</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Tati</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Pilates Mat</div>
+              <div class="class-teacher">Pengajar: Edward</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">RABU</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">16.30</div>
+              <div class="class-name">Wheel Yoga</div>
+              <div class="class-teacher">Pengajar: Yanni</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.30</div>
+              <div class="class-name">Aerial Yoga</div>
+              <div class="class-teacher">Pengajar: Melva</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Maya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">KAMIS</div>
+            <div class="class-count">2 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Power Hatha VY</div>
+              <div class="class-teacher">Pengajar: Nicke</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Pilates Mat</div>
+              <div class="class-teacher">Pengajar: Edward</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">JUMAT</div>
+            <div class="class-count">1 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">17.30</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Farisa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SABTU</div>
+            <div class="class-count">1 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Hatha Vinyasa</div>
+              <div class="class-teacher">Pengajar: Ernita</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Studio 1 - Pilates -->
+    <div id="studio1-pilates" class="schedule-section">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Puri Casablanca Blok B.2</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MINGGU</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">10.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SENIN</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">15.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SELASA</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">07.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Kelas Postural</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">RABU</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">09.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">KAMIS</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Kelas Postural</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">JUMAT</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">09.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">19.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SABTU</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">10.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Studio 2 - Pilates -->
+    <div id="studio2-pilates" class="schedule-section">
+      <div class="location-badge">
+        <span>📍</span>
+        <span>Batam, Ruko Golden Land Blok L 12a - 12b</span>
+      </div>
+      
+      <div class="week-grid">
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">MINGGU</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">16.00</div>
+              <div class="class-name">Kelas Postural</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SENIN</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.30</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SELASA</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.30</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">RABU</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.30</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">KAMIS</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.30</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">JUMAT</div>
+            <div class="class-count">3 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">17.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">18.30</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-name">SABTU</div>
+            <div class="class-count">4 Kelas</div>
+          </div>
+          <div class="classes-grid">
+            <div class="class-item">
+              <div class="class-time">08.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">09.15</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+            <div class="class-item postural">
+              <div class="class-time">10.00</div>
+              <div class="class-name">Kelas Postural</div>
+            </div>
+            <div class="class-item">
+              <div class="class-time">15.00</div>
+              <div class="class-name">Kelas Grup Pilates</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+      <div class="footer-content container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">AnjaPlus</div>
+          <div class="footer-tagline">Studio Yoga & Pilates di Batam</div>
+          <p class="footer-description">
+            Ruang yang hangat untuk gerakan penuh kesadaran, kekuatan, dan keseimbangan melalui yoga dan pilates untuk semua level.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h5>Jelajahi</h5>
+          <ul>
+            <li><a href="classes.html">Kelas & Harga</a></li>
+            <li><a href="schedule.html">Jadwal</a></li>
+            <li><a href="classes.html#training">Pelatihan Instruktur</a></li>
+            <li><a href="location.html">Lokasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h5>Kontak</h5>
+          <ul>
+            <li>Batam, Indonesia</li>
+            <li>
+              <a href="https://wa.me/6281373319019" target="_blank">
+                WhatsApp: +62 813-7331-9019
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@anjaplus.com">
+                info@anjaplus.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h5>Ikuti Kami</h5>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/anjayogastudio" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
+                  <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95z"/>
+                  <path d="M21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
+                </svg>
+              Anjayoga Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anjapropilatesstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
+                  <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95z"/>
+                  <path d="M21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
+                </svg>
+                Anjapro Pilates
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anjayogaschool?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
+                  <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95z"/>
+                  <path d="M21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
+                </svg>
+                Anjayoga School
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/anjayogastudio" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/>
+                </svg>
+                Anjayoga Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61557147827435" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/>
+                </svg>
+                Anjapro Pilates
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-content">
+          <span>© 2026 AnjaPro Yoga & Pilates. Semua hak dilindungi.</span>
+          <div class="footer-legal">
+            <a href="privacy.html">Kebijakan Privasi</a>
+            <a href="terms.html">Syarat & Ketentuan</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="../assets/js/main.js"></script>
+</body> 
+</html>

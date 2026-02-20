@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AnjaPro Yoga & Pilates | Transform Your Practice</title>
-  <meta name="description" content="Studio yoga dan pilates yang berfokus pada kesehatan holistik serta keseimbangan tubuh dan pikiran di Batam.">
+  <title>AnjaPro Yoga & Pilates | Transformasi Praktik Anda</title>
+  <meta name="description" content="Studio yoga dan pilates yang berfokus pada kesehatan holistik dan keseimbangan tubuh serta pikiran di Batam.">
   
   <!-- SEO & Alternate Languages -->
-  <link rel="alternate" hreflang="id" href="https://anjapro.com/" />
-  <link rel="alternate" hreflang="en" href="https://anjapro.com/en/" />
-  <link rel="alternate" hreflang="x-default" href="https://anjapro.com/" />
+  <link rel="alternate" hreflang="id" href="https://anjaplus.com/" />
+  <link rel="alternate" hreflang="en" href="https://anjaplus.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://anjaplus.com/" />
   
   <!-- Open Graph -->
   <meta property="og:locale" content="id_ID" />
-  <meta property="og:title" content="AnjaPro Yoga & Pilates" />
+  <meta property="og:title" content="Anjaplus Yoga & Pilates" />
   <meta property="og:description" content="Studio yoga dan pilates di Batam" />
   
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -22,12 +22,12 @@
   <!-- Hero Section -->
   <div class="hero">
     <div class="hero-content">
-      <div class="hero-tagline">Transform Your Practice</div>
-      <h1 class="hero-title">AnjaPlus</h1>
+      <div class="hero-tagline">Transformasi Praktik Anda</div>
+      <h1 class="hero-title">Anjaplus</h1>
       <p class="hero-subtitle">Yoga & Pilates • Sehat • Kuat • Seimbang</p>
       <div class="hero-cta">
-        <a href="#kelas" class="btn btn-primary">Jelajahi Kelas</a>
-        <a href="https://wa.me/6281373319019" class="btn btn-secondary" target="_blank">Booking Sekarang</a>
+        <a href="#classes" class="btn btn-primary">Jelajahi Kelas</a>
+        <a href="https://wa.me/6281373319019" class="btn btn-secondary" target="_blank">Daftar Sekarang</a>
       </div>
     </div>
     <div class="scroll-indicator"></div>
@@ -36,15 +36,29 @@
   <!-- Navigation -->
   <nav id="navbar">
     <div class="container">
-      <div class="logo">AnjaPlus</div>
+      <div class="logo">Anjaplus</div>
       <div class="nav-links">
-        <a href="#profil">Tentang</a>
-        <a href="#kelas">Kelas</a>
-        <a href="#jadwal">Jadwal</a>
-        <a href="#lokasi">Lokasi</a>
+        <a href="#home">Tentang Kami</a>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            aria-expanded="false"
+            aria-controls="classes-menu"
+            id="classesToggle">
+            Kelas 
+            <span class="caret">▾</span>
+          </button>
+        <div class="dropdown-menu" id="classes-menu">
+          <a href="classes.html#yoga">Yoga</a>
+          <a href="classes.html#pilates">Pilates</a>
+          <a href="classes.html#training">Pelatihan Instruktur</a>
+        </div>
+      </div>
+        <a href="schedule.html">Jadwal</a>
+        <a href="location.html">Lokasi</a>
         <div class="lang-toggle-nav">
-          <div class="lang-toggle-btn">
-            <a href="../id/index.html" class="lang-option active">ID</a>
+          <div class="lang-toggle-btn id-active">
+            <a href="index.html" class="lang-option active">ID</a>
             <a href="../en/index.html" class="lang-option">EN</a>
           </div>
         </div>
@@ -53,39 +67,8 @@
     </div>
   </nav>
 
-  <!-- Philosophy Section -->
-  <section id="profil" class="philosophy">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Tentang Kami</div>
-        <h2 class="section-title">Filosofi AnjaPlus</h2>
-        <p class="section-description">
-          Studio yoga dan pilates yang berfokus pada kesehatan holistik serta keseimbangan tubuh dan pikiran. Kami menyediakan kelas offline, online, dan hybrid yang dirancang untuk menyesuaikan dengan gaya hidup modern.
-        </p>
-      </div>
-
-      <div class="philosophy-grid">
-        <div class="philosophy-card">
-          <div class="philosophy-icon">🧘</div>
-          <h3>Holistik</h3>
-          <p>Pendekatan menyeluruh yang menyatukan tubuh, pikiran, dan jiwa untuk kesehatan optimal dan keseimbangan hidup.</p>
-        </div>
-        <div class="philosophy-card">
-          <div class="philosophy-icon">💪</div>
-          <h3>Profesional</h3>
-          <p>Instruktur bersertifikat dengan pendekatan aman, progresif, dan suportif untuk semua level praktisi.</p>
-        </div>
-        <div class="philosophy-card">
-          <div class="philosophy-icon">✨</div>
-          <h3>Fleksibel</h3>
-          <p>Kelas offline, online, dan hybrid yang disesuaikan dengan kebutuhan dan ritme hidup Anda.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Classes Section -->
-  <section id="kelas" class="classes">
+  <section id="classes" class="classes">
     <div class="container">
       <div class="section-header">
         <div class="section-label">Program Kami</div>
@@ -98,198 +81,312 @@
       <div class="classes-grid">
         <div class="class-card">
           <div class="class-header">
-            <h3>Yoga Flow</h3>
-            <div class="class-type">Dinamis • Mindful</div>
+            <h3>Yoga</h3>
+            <div class="class-type">Dinamis • Penuh Kesadaran</div>
           </div>
           <div class="class-body">
-            <p>Latihan yoga dinamis yang menggabungkan gerakan lembut dan pernapasan untuk meningkatkan fleksibilitas, fokus mental, dan ketenangan pikiran.</p>
+            <p>Praktik yoga dinamis yang memadukan gerakan lembut dan teknik pernapasan untuk meningkatkan fleksibilitas, fokus mental, dan ketenangan pikiran.</p>
             <ul class="class-features">
               <li>Peningkatan fleksibilitas tubuh</li>
               <li>Teknik pernapasan mendalam</li>
-              <li>Reduksi stres dan kecemasan</li>
+              <li>Pengurangan stres dan kecemasan</li>
               <li>Cocok untuk semua level</li>
             </ul>
+            <a href="classes.html#yoga" class="class-link">Pelajari Lebih Lanjut →</a>
           </div>
         </div>
 
         <div class="class-card">
           <div class="class-header">
-            <h3>Pilates Mat</h3>
+            <h3>Pilates</h3>
             <div class="class-type">Kekuatan • Stabilitas</div>
           </div>
           <div class="class-body">
-            <p>Program yang fokus pada kekuatan core, perbaikan postur tubuh, dan stabilitas keseluruhan. Membentuk otot tanpa menambah bulk.</p>
+            <p>Program yang berfokus pada penguatan inti tubuh, perbaikan postur, dan stabilitas menyeluruh. Bangun otot tanpa menambah massa berlebih.</p>
             <ul class="class-features">
-              <li>Penguatan core & stabilitas</li>
+              <li>Penguatan & stabilitas inti tubuh</li>
               <li>Perbaikan postur tubuh</li>
               <li>Pemulihan cedera</li>
-              <li>Pembentukan otot lean</li>
+              <li>Pembentukan otot ramping</li>
             </ul>
+            <a href="classes.html#pilates" class="class-link">Pelajari Lebih Lanjut →</a>
           </div>
         </div>
 
         <div class="class-card">
           <div class="class-header">
-            <h3>Format Fleksibel</h3>
-            <div class="class-type">Offline • Online • Hybrid</div>
+            <h3>Pelatihan Instruktur Yoga</h3>
+            <div class="class-type">Sertifikasi • Profesional</div>
           </div>
           <div class="class-body">
-            <p>Fleksibilitas maksimal dalam berlatih. Pilih format yang sesuai dengan jadwal dan preferensi Anda.</p>
+            <p>Jadilah instruktur yoga bersertifikat dengan program pelatihan komprehensif kami. Pelajari metodologi pengajaran, anatomi, dan filosofi yoga.</p>
             <ul class="class-features">
-              <li>Kelas offline di studio</li>
-              <li>Live streaming via Zoom</li>
-              <li>Sesi private tersedia</li>
-              <li>Jadwal yang fleksibel</li>
+              <li>Sertifikasi diakui secara internasional</li>
+              <li>Kurikulum menyeluruh</li>
+              <li>Mentor berpengalaman</li>
+              <li>Praktik mengajar langsung</li>
             </ul>
+            <a href="classes.html#training" class="class-link">Pelajari Lebih Lanjut →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Schedule Section -->
-  <section id="jadwal" class="schedule">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Jadwal Kelas</div>
-        <h2 class="section-title">Waktu Berlatih</h2>
-        <p class="section-description">
-          Kelas terbatas untuk memastikan perhatian personal. Reservasi dianjurkan.
-        </p>
+   <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="benefits-layout">
+      <div class="benefits-left">
+        <span class="section-label">Mengapa Memilih Kami</span>
+        <h2 class="benefits-heading">Bangun Kekuatan<br><em>& Keseimbangan</em></h2>
+        <p class="benefits-intro">Rasakan perubahan positif yang dibawa yoga dan pilates bagi tubuh, pikiran, dan rutinitas harian Anda — mulai dari kelas pertama Anda.</p>
+        <a href="#" class="benefits-cta-pill">
+          Mulai Sekarang
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 7h12M8 2l5 5-5 5"/>
+          </svg>
+        </a>
       </div>
-
-      <div class="schedule-grid">
-        <div class="schedule-day">
-          <h3>Senin – Jumat</h3>
-          <div class="schedule-item">
-            <div class="schedule-time">07:00</div>
-            <div class="schedule-class">
-              <div class="schedule-class-name">Yoga Flow</div>
-              <div class="schedule-class-type">Pagi Energi</div>
-            </div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">17:00</div>
-            <div class="schedule-class">
-              <div class="schedule-class-name">Pilates Mat</div>
-              <div class="schedule-class-type">Sore Rileks</div>
-            </div>
+      <div class="benefits-right">
+        <div class="benefit-row">
+          <div class="benefit-number">01</div>
+          <div class="benefit-content">
+            <h3>Kesehatan Fisik</h3>
+            <p>Tingkatkan kekuatan, fleksibilitas, postur, dan kesehatan fisik secara keseluruhan melalui praktik yang konsisten.</p>
           </div>
         </div>
-
-        <div class="schedule-day">
-          <h3>Sabtu</h3>
-          <div class="schedule-item">
-            <div class="schedule-time">08:00</div>
-            <div class="schedule-class">
-              <div class="schedule-class-name">Yoga Flow</div>
-              <div class="schedule-class-type">Weekend Special</div>
-            </div>
+        <div class="benefit-row">
+          <div class="benefit-number">02</div>
+          <div class="benefit-content"> 
+            <h3>Kejernihan Mental</h3>
+            <p>Kurangi stres, tingkatkan fokus, dan kembangkan kesadaran penuh untuk kesejahteraan mental yang lebih baik.</p>
           </div>
-          <div style="margin-top: 30px; padding: 20px; background: white; border-radius: 12px; border-left: 4px solid #EABA1D;">
-            <p style="color: var(--charcoal); opacity: 0.8; line-height: 1.7;">
-              <strong style="color: var(--burgundy);">Private Session:</strong><br>
-              Jadwal fleksibel sesuai kebutuhan Anda
-            </p>
+        </div> 
+        <div class="benefit-row">
+          <div class="benefit-number">03</div>
+          <div class="benefit-content">
+            <h3>Dukungan Komunitas</h3>
+            <p>Bergabunglah dengan komunitas praktisi yang hangat dan saling mendukung dalam perjalanan kesehatan masing-masing.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Locations Section -->
-  <section id="lokasi" class="locations">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Lokasi Kami</div>
-        <h2 class="section-title">Dua Studio di Batam</h2>
-        <p class="section-description">
-          Temukan studio AnjaPro terdekat dan mulai perjalanan transformasi Anda menuju kesehatan optimal
-        </p>
+  <!-- FORMATS -->
+  <section class="formats">
+    <div class="formats-header">
+      <div class="formats-header-left">
+        <span class="section-label">Belajar Fleksibel</span>
+        <h2 class="formats-heading">Pilih Format<br>Anda</h2>
       </div>
-      <div class="locations-grid">
-        <div class="location-card">
-          <div class="location-header">
-            <div class="location-number">01</div>
-            <h3 class="location-title">
-              <span class="btn-icon">📍</span>
-              <span>Studio Simpang Jam</span>
-            </h3>
-            <div class="location-subtitle">Primary Location</div>
-          </div>
-
-          <div class="location-body">
-            <div class="location-address">
-              <div class="location-address-label">Alamat Lengkap</div>
-              <div class="location-address-text">
-                <strong>Perum. Puri Casablanca Blok B.02</strong>
-                Simpang Jam, depan RS Awal Bross<br>Batam, Kepulauan Riau
-              </div>
-            </div>
-
-            <div class="location-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.2820185188057!2d104.01645223645038!3d1.1212653921051128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98bbb57bb7981%3A0xfaf58767461b40fc!2sAnjaPro%20Pilates%20Studio!5e0!3m2!1sen!2sid!4v1768051907560!5m2!1sen!2sid"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen
-              ></iframe>
-            </div>
+      <div class="formats-header-right">
+        <p>Berlatih dengan cara Anda sendiri menggunakan pilihan yang sesuai dengan gaya hidup dan preferensi Anda — di mana pun Anda berada, apa pun jadwal Anda.</p>
+      </div>
+    </div>
+    <div class="formats-stack">
+      <div class="format-row">
+        <div class="format-left">
+          <div class="format-tag">Tatap Muka</div>
+          <div class="format-title">Kelas Grup</div>
+        </div>
+        <div class="format-divider"></div>
+        <div class="format-right">
+          <p>Bergabunglah langsung di studio kami yang lengkap di Batam untuk pengalaman penuh dengan bimbingan langsung dari instruktur.</p>
+          <div class="format-pills">
+            <span>Peralatan profesional</span>
+            <span>Koreksi personal</span>
+            <span>Suasana komunitas</span>
+            <span>Perhatian penuh instruktur</span>
           </div>
         </div>
-
-        <div class="location-card">
-          <div class="location-header">
-            <div class="location-number">02</div>
-            <h3 class="location-title">
-              <span class="btn-icon">📍</span>
-              <span>Studio Batam Center</span>
-            </h3>
-            <div class="location-subtitle">Secondary Location</div>
+        <div class="format-index">01</div>
+      </div> 
+      <div class="format-row">
+        <div class="format-left">
+          <div class="format-tag">1-on-1</div>
+          <div class="format-title">Sesi Privat</div>
+        </div>
+        <div class="format-divider"></div>
+        <div class="format-right">
+          <p>Dapatkan perhatian penuh dengan program yang disesuaikan khusus untuk tujuan dan kebutuhan Anda.</p>
+          <div class="format-pills">
+            <span>Program personal</span>
+            <span>Jadwal fleksibel</span>
+            <span>Kemajuan lebih cepat</span>
+            <span>Perhatian terfokus</span>
           </div>
+        </div>
+        <div class="format-index">02</div>
+      </div>
+    </div>
+  </section> 
 
-          <div class="location-body">
-            <div class="location-address">
-              <div class="location-address-label">Alamat Lengkap</div>
-              <div class="location-address-text">
-                <strong>Ruko Golden Land Blok L12a–12b</strong>
-                Simpang Kara, Batam Center<br>Batam, Kepulauan Riau
-              </div>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testimonials-inner">
+      <div class="testimonials-header">
+        <span class="section-label">Kisah Sukses</span>
+        <h2 class="testimonials-title">Apa Kata<br><em>Member Kami</em></h2>
+        <div class="testimonials-meta">
+          <div class="testimonials-meta-number">★ 5.0</div>
+          <div class="testimonials-meta-label">Rating rata-rata</div>
+        </div>
+      </div>
+      <div class="testimonials-track">
+        <div class="testimonial-card testimonial-card--featured">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Sudah 10 tahun saya yoga di sini. Pemiliknya yang rendah hati dan ramah, Cikgu Rianti, telah membuat adikku yang cantik semakin sukses. Studio yang penuh cinta dan dedikasi. Tempat yang benar-benar menjaga energi positif. Instruktur yang profesional.</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-author-info">
+              <div class="testimonial-name">Henry Tan.</div>
+              <div class="testimonial-role">Member Yoga</div>
             </div>
-
-            <div class="location-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.900811964718!2d104.03946896404219!3d1.1108405686047909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d9899751e67255%3A0x1013c015a63381cb!2sAnjapro%20pilates%20studio%202!5e0!3m2!1sen!2sid!4v1768051997424!5m2!1sen!2sid"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen
-              ></iframe>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Studio pilates yang nyaman dan menyenangkan. Coach Arie Pax, salah satu pelatih berpengalaman, sangat sopan, sabar, dan ramah. Kelasnya selalu menantang tapi menyenangkan, dengan panduan yang jelas sepanjang sesi.</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-author-info">
+              <div class="testimonial-name">Lusi</div>
+              <div class="testimonial-role">Member Pilates</div>
             </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Sekolah yoga ini mengajarkan dari dasar hingga praktik yang populer, memberdayakan siswa untuk mengenali kemampuan dan karakteristik diri mereka sendiri. Kelasnya sistematis dan berfokus pada cara menjadikan yoga sebagai gaya hidup bagi orang lain. Para pengajar sangat membimbing dan membantu siswa menyadari potensi mereka sendiri, sehingga mereka, sebagai calon pelatih atau instruktur yoga, benar-benar memahami dan mengenal diri sendiri. Pilihan lokasi belajar juga menyenangkan, dengan makanan sehat dan suasana yang nyaman. Saya sangat beruntung menjadi alumni sekolah yoga ini. Terima kasih.</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-author-info">
+              <div class="testimonial-name">Rohani M.</div>
+              <div class="testimonial-role">Instruktur Bersertifikat</div>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> 
 
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="cta-box">
       <h2>Mulai Perjalanan Anda</h2>
-      <p>Bergabunglah dengan komunitas kami dan rasakan transformasi dalam tubuh, pikiran, dan jiwa Anda. Kelas pertama menanti!</p>
+      <p>Bergabunglah dengan komunitas kami dan rasakan transformasi pada tubuh, pikiran, dan jiwa Anda. Kelas pertama Anda menanti!</p>
       <a href="https://wa.me/6281373319019" class="btn btn-primary" target="_blank">Hubungi Kami via WhatsApp</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">AnjaPro</div>
-      <div class="footer-tagline">Transform Your Practice</div>
-      <div class="footer-divider"></div>
-      <div class="footer-copyright">© 2026 AnjaPro Yoga & Pilates. All rights reserved.</div>
-    </div>
-  </footer>
-  
+    <footer>
+      <div class="footer-content container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">AnjaPlus</div>
+          <div class="footer-tagline">Studio Yoga & Pilates di Batam</div>
+          <p class="footer-description">
+            Ruang yang hangat untuk gerakan penuh kesadaran, kekuatan, dan keseimbangan melalui yoga dan pilates untuk semua level.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h5>Jelajahi</h5>
+          <ul>
+            <li><a href="classes.html">Kelas & Harga</a></li>
+            <li><a href="schedule.html">Jadwal</a></li>
+            <li><a href="classes.html#training">Pelatihan Instruktur</a></li>
+            <li><a href="location.html">Lokasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h5>Kontak</h5>
+          <ul>
+            <li>Batam, Indonesia</li>
+            <li>
+              <a href="https://wa.me/6281373319019" target="_blank">
+                WhatsApp: +62 813-7331-9019
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@anjaplus.com">
+                info@anjaplus.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h5>Ikuti Kami</h5>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/anjayogastudio" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
+                  <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95z"/>
+                  <path d="M21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
+                </svg>
+              Anjayoga Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anjapropilatesstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
+                  <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95z"/>
+                  <path d="M21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
+                </svg>
+                Anjapro Pilates
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anjayogaschool?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
+                  <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95z"/>
+                  <path d="M21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
+                </svg>
+                Anjayoga School
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/anjayogastudio" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/>
+                </svg>
+                Anjayoga Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61557147827435" target="_blank">
+                <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/>
+                </svg>
+                Anjapro Pilates
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-content">
+          <span>© 2026 AnjaPro Yoga & Pilates. Semua hak dilindungi.</span>
+          <div class="footer-legal">
+            <a href="privacy.html">Kebijakan Privasi</a>
+            <a href="terms.html">Syarat & Ketentuan</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -238,6 +238,105 @@ nav .container {
   font-size: 0.95rem;
 }
 
+/* 1. Hide the hamburger on desktop */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333; /* Match your brand color */
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* 2. Mobile Styles */
+@media (max-width: 768px) {
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    padding: 8px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Normalize all items */
+  .nav-links a,
+  .nav-links .dropdown-toggle {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Remove underline animation */
+  .nav-links a::after {
+    display: none;
+  }
+
+  /* Dropdown cleanup */
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+  }
+
+  .nav-links .dropdown-toggle {
+    background: none;
+    border: none;
+    font: inherit;
+    color: var(--burgundy);
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  /* Language toggle */
+  .lang-toggle-nav {
+    width: 100%;
+  }
+
+  .lang-toggle-btn {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Booking button — visually separated CTA */
+  .nav-links .btn {
+    margin: 16px 24px;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: none; /* Important */
+  }
+} 
+
 /* =====================
    SHARED SECTION STYLES
    ===================== */
@@ -1332,6 +1431,29 @@ footer {
 }
 
 .footer-legal a:hover { color: var(--gold); }
+
+.footer-social ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--light-gray);
+  display: inline-block;
+}
+
+.footer-social a {
+  color: var(--cream);
+}
+
+.footer-social a:hover {
+  color: var(--gold);
+}
+
+
 
 /* =====================
    DROPDOWN
