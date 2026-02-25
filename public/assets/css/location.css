@@ -51,44 +51,6 @@ nav .container {
   letter-spacing: -0.02em;
 }
 
-.nav-links {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.nav-links a {
-  color: var(--burgundy);
-  text-decoration: none;
-  font-weight: 600;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--gold);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--rose);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.nav-links .btn {
-  padding: 12px 28px;
-  font-size: 0.95rem;
-}
-
 /* Dropdown container */
 .dropdown {
   position: relative;
