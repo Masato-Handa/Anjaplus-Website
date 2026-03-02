@@ -1,0 +1,299 @@
+/* =====================
+   PRIVACY POLICY PAGE
+   Editorial reading layout — built on main.css variables
+   ===================== */
+
+/* ── Hero banner ── */
+.privacy-hero {
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--rose) 60%, var(--mauve) 100%);
+  padding: 160px 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.privacy-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 60%, rgba(234, 186, 29, 0.12), transparent 50%),
+    radial-gradient(circle at 85% 20%, rgba(235, 222, 212, 0.08), transparent 50%);
+}
+
+.privacy-hero::after {
+  content: "Privacy";
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  font-size: clamp(8rem, 18vw, 16rem);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.04);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.privacy-hero-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.privacy-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.privacy-hero-eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.privacy-hero h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+
+.privacy-hero-meta {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
+/* ── Two-column layout ── */
+.privacy-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px 120px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* ── Sticky TOC ── */
+.privacy-toc {
+  position: sticky;
+  top: 100px;
+}
+
+.privacy-toc-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.privacy-toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid rgba(114, 67, 69, 0.12);
+}
+
+.privacy-toc ol li a {
+  display: block;
+  padding: 8px 0 8px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  opacity: 0.45;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  line-height: 1.4;
+  border-left: 2px solid transparent;
+  margin-left: -2px;
+}
+
+.privacy-toc ol li a:hover {
+  opacity: 1;
+  color: var(--burgundy);
+  border-left-color: var(--gold);
+}
+
+/* ── Main article ── */
+.privacy-article {
+  min-width: 0;
+}
+
+/* ── Individual sections ── */
+.privacy-section {
+  padding-bottom: 56px;
+  margin-bottom: 56px;
+  border-bottom: 1px solid rgba(114, 67, 69, 0.1);
+  scroll-margin-top: 110px;
+}
+
+.privacy-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.privacy-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.privacy-section-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  background: rgba(234, 186, 29, 0.12);
+  padding: 3px 10px;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.privacy-section h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--burgundy);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.privacy-section p {
+  font-size: 1.05rem;
+  color: var(--charcoal);
+  opacity: 0.72;
+  line-height: 1.95;
+  margin-bottom: 16px;
+}
+
+.privacy-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Highlight callout ── */
+.privacy-callout {
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+
+.privacy-callout p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* ── Contact — special treatment ── */
+.privacy-section--contact {
+  background: linear-gradient(135deg, var(--burgundy), var(--rose));
+  border-radius: 24px;
+  padding: 48px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.privacy-section--contact .privacy-section-num {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.privacy-section--contact h2 {
+  color: white;
+}
+
+.privacy-section--contact p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.privacy-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  color: var(--charcoal);
+  background: var(--gold);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(234, 186, 29, 0.35);
+}
+
+.privacy-contact-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(234, 186, 29, 0.5);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .privacy-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 60px 32px 100px;
+  }
+
+  .privacy-toc {
+    position: static;
+  }
+
+  .privacy-toc ol {
+    border-left: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .privacy-toc ol li a {
+    border: 1.5px solid rgba(114, 67, 69, 0.15);
+    border-left: 1.5px solid rgba(114, 67, 69, 0.15);
+    border-radius: 50px;
+    padding: 6px 14px;
+    margin: 0;
+    font-size: 0.78rem;
+    opacity: 0.7;
+  }
+
+  .privacy-toc ol li a:hover {
+    border-color: var(--gold);
+    background: rgba(234, 186, 29, 0.06);
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-hero {
+    padding: 140px 24px 60px;
+  }
+
+  .privacy-layout {
+    padding: 48px 24px 80px;
+  }
+
+  .privacy-section--contact {
+    padding: 36px 28px;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.3rem;
+  }
+}
