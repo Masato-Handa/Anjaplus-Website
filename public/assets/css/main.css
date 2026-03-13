@@ -130,6 +130,29 @@ html {
   color: var(--gold);
 }
 
+.hero-logo-bg {
+  position: absolute;
+  top: 50%; /* vertically center */
+  transform: translateY(-50%);
+  opacity: 0.1; /* subtle background effect */
+  pointer-events: none; /* allows clicks on buttons/text */
+  max-width: 200px; /* adjust size */
+}
+
+.hero-logo-left {
+  left: 50px; /* align left */
+}
+
+.hero-logo-right {
+  right: 430px; /* align right */
+}
+
+.hero-content {
+  position: relative; /* ensures text is above logos */
+  z-index: 2;
+  text-align: center;
+}
+
 /* =====================
    BUTTONS
    ===================== */
