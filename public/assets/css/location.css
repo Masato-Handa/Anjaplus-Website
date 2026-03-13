@@ -51,44 +51,6 @@ nav .container {
   letter-spacing: -0.02em;
 }
 
-.nav-links {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.nav-links a {
-  color: var(--burgundy);
-  text-decoration: none;
-  font-weight: 600;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--gold);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--rose);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.nav-links .btn {
-  padding: 12px 28px;
-  font-size: 0.95rem;
-}
-
 /* Dropdown container */
 .dropdown {
   position: relative;
@@ -314,9 +276,14 @@ body {
   border-radius: 50%;
 }
 
-.locations .section-label,
+.locations .section-label{
+  color: var(--gold);
+  font-weight: 500;
+}
+
 .locations .section-title {
   color: white;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
 }
 
 .locations .section-description {
@@ -597,14 +564,15 @@ body {
 /* Service Toggle Container */
 .service-toggle-nav {
   display: flex;
-  justify-content: center; /* Centers the toggle on the page */
+  justify-content: left; /* Centers the toggle on the page */
   margin: 40px 0;
+  background: transparent;
 }
 
 .service-toggle-btn {
   display: flex;
   align-items: center;
-  background: rgba(114, 67, 69, 0.1); /* Match lang toggle */
+  background: var(--light-gray);/*rgba(114, 67, 69, 0.1);  Match lang toggle */
   border: 2px solid rgba(114, 67, 69, 0.2);
   border-radius: 50px;
   padding: 4px;
@@ -771,6 +739,27 @@ footer {
 }
 
 .footer-legal a:hover {
+  color: var(--gold);
+}
+
+.footer-social ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--light-gray);
+  display: inline-block;
+}
+
+.footer-social a {
+  color: var(--cream);
+}
+
+.footer-social a:hover {
   color: var(--gold);
 }
 
